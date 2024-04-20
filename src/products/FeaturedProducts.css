@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between items */
+    align-items: center; /* Centers items vertically */
+    width: 100%; /* Take full width to distribute space */
+}
+
+.price {
+    margin-right: auto; /* Pushes everything else to the right */
+}
+
+.add-to-cart-button {
+    padding: 8px 16px; /* Adjust padding to ensure it looks good */
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    padding-top: 125%; /* 3/4 = 0.75, which is 75% */
+}
+
+.aspect-ratio > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will cover the entire div, cropping the image if necessary */
+}
